@@ -1,0 +1,69 @@
+6th Video Props and proptypes -->
+
+component banane ke baad use import bhi karna hota hai..
+
+props ==>
+props likh ke component ke liye props paas kar sakte hai..
+jese title dena hai website ka to section me likh do {props.title}
+aur apne main page me <ComponentName/>  waale tag ke ander hi title : "input tilte" likh do props pass ho jaayega..
+
+proptypes ==>
+proptypes zaruri hai nhi to development ke time ham fas sakte hai
+
+componentkatagname.proptypes {
+    title : Proptypes.string or .number etc.. ,
+    about : Proptypes.string or .number etc..
+}
+
+isrequired de ke prop dena mandatory bhi kar sakte hai ..
+
+componentkatagname.proptypes {
+    title : Proptypes.string() or .number etc..).isrequired ,
+    about : Proptypes.string() or .number etc..).isrequired
+}
+
+
+default Proptypes bhi de sakte hai 
+
+componentkatagname.defaultProps {
+    title : "enter kar",
+    about : "daal de"
+}
+
+
+
+
+
+
+
+VIDEO 7     STATE & HANDLING EVENTS IN REACT
+
+rfc = for react function based component
+
+isme hamne seekha ki kaise useState ki madad se hamne button par onClick function run karwaya 
+
+react hook -->>
+  const [text, setText] = useState("Enter Your Text here");
+
+  text == intial hai 
+
+  updation ke liye hame setText use karna padega nhi to nhi hoga  for e.g
+
+  text("text enter kar")
+
+  setText("fdg")
+
+  to ye js se thoda alag hai par hai js hi..
+
+  ///event handler ------->>>>>
+
+      const function_ka_naam = (event) => {
+        setText(event.target.value);}
+
+
+
+
+VIDEO 8 ADDING MORE LOGIC ON OUR WEBSITE
+
+to get no. of words in js elem.split(" ").length
+to get character elem.length
